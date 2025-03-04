@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #414040;
+    color: #333;
+}
+
+/* Main Container */
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar .logo {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #f67e46;
+}
+
+/* Info Section */
+.info {
+    text-align: center;
+    color: rgb(29, 29, 29);
+    margin-top: 100px;
+}
+
+.info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.info h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info h1 span, .info h2 span {
+    color: #f67e46;
+}
+
+.info h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.info a {
+    display: inline-block;
+    background-color: #edece9;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.info a:hover {
+    background-color: #f67e46;
+}
+
+/* Image Section */
+.image {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.image .girl {
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Social Links */
+.social-links {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+.social-links .icon {
+    font-size: 30px;
+    color: white;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-links .icon:hover {
+    transform: scale(1.2);
+    color: #f67e46;
+}
